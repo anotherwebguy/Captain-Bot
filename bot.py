@@ -1,5 +1,11 @@
 import discord
 from discord.ext import commands
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 client = commands.Bot(command_prefix='!')
 
@@ -7,4 +13,4 @@ client = commands.Bot(command_prefix='!')
 async def on_ready():
     print("The bot is ready")
 
-client.run('ODU3NDIwMjg1NTY5NTMxOTA0.YNPU3g.FVsVxSuDFptXSMy3vP49oBPzlKo')
+client.run(TOKEN)
