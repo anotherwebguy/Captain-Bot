@@ -38,7 +38,7 @@ This bot can be invited in any discord server and the bot is ready to go
 
 ----
 
-## Features:
+## Commands/Features:
   1. <b>!help:</b> Gives the list of commands that are possible.<br>
       example: !help
   2. <b>!ban:</b> Bans the provided user.<br>
