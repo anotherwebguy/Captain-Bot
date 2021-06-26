@@ -35,3 +35,36 @@ This bot can be invited in any discord server and the bot is ready to go
     For getting random jokes
 ### 4. pywikihow:
     For searching how to on wikipedia
+
+----
+
+## Features:
+  1. <b>!help:</b> Gives the list of commands that are possible.<br>
+      example: !help
+  2. <b>!ban:</b> Bans the provided user.<br>
+      example: !ban @[Discord.member]
+  3. <b>!unban:</b> Unbans the banned provided user.<br>
+      example: !unban [Discord.name+'#'+'Discord.discriminator]
+  4. <b>!kick:</b> Kicks the provided user from server.<br>
+      example: !kick @[Discord.member]
+  5. <b>!8ball:</b> Ask a question to check your luck.<br>
+      example: !8ball Will i pass the test tomorrow?
+  6. <b>!uinfo/user:</b> Shows the provided user info.<br>
+      example: !user @[Discord.member]
+  6. Search the google
+  7. Raise or low volume
+  8. Open system apps
+  9. Spell any word
+  10. Basic calculations
+  11. Find your location
+  12. check internet speed and availablity
+
+----
+
+## Getting started-
+1. Clone the repo.
+2. `pip install -r requirements.txt` to install all requirements, some of the things you may need to install manually so check requirements.txt file.
+If anything is failing (or giving error) then skip that package or try to install that manually by searching on Google about that package. It's not a big deal.
+3. Run `bot.py` file.
+4. Installation may take time.
+5. Read *Features* for more information before getting started.
