@@ -32,8 +32,8 @@ class Functions(commands.Cog):
     async def ping(self, ctx):
         await ctx.send("Pong!")
 
-    @commands.command()
-    async def _8ball(ctx, *, question):
+    @commands.command(aliases = ['8ball','Test'])
+    async def _8ball(self, ctx, *, question):
         responses = ['It is certain.',
                      'Without a doubt',
                      'Yes. definitely',
@@ -68,13 +68,16 @@ class Functions(commands.Cog):
     @commands.command()
     async def unban(self, ctx, *, member):
         banned_users = await ctx.guild.bans()
+        print(banned_users)
         member_name, member_descriminator = member.split('#')
+        print(member_name)
+        print(member_descriminator)
         for ban_entry in banned_users:
             user = ban_entry.user
-
-            if (user.name, user.descriminator) == (member_name, member_descriminator):
+            if (user.name, user.discriminator) == (member_name, member_descriminator):
+                print("true")
                 await ctx.guild.unban(user)
-                await ctx.send(f"Unbanned {user.name}#{user.descriminator}")
+                await ctx.send(f"Unbanned {user.name}#{user.discriminator}")
                 return
 
 
