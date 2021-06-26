@@ -51,13 +51,12 @@ This bot can be invited in any discord server and the bot is ready to go
       example: !8ball Will i pass the test tomorrow?
   6. <b>!uinfo/user:</b> Shows the provided user info.<br>
       example: !user @[Discord.member]
-  6. Search the google
-  7. Raise or low volume
-  8. Open system apps
-  9. Spell any word
-  10. Basic calculations
-  11. Find your location
-  12. check internet speed and availablity
+  7. <b>!poll:</b> Creates a poll using reactions.
+      <br>example: !poll Which is your favourite anime? | Naruto | Steins;gate | One piece | Death note
+  8. <b>!calc:</b> Do some basic calculations.<br>
+      example: !calc 2+3
+  9. <b>!clear:</b> Create last specified number of messages.<br>
+      example: !clear 20
 
 ----
 
