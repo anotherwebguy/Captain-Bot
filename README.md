@@ -1,5 +1,6 @@
+
 <p align="center">
-  <img src="https://img.shields.io/badge/python-%230175C2.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+  <img width="20%" height="20%" src="https://user-images.githubusercontent.com/66346161/123515458-16826100-d6b5-11eb-8d41-f02bf6281c0c.png"/>
 </p>
 <h1 align="center"> 🤖Captain-Bot🤖 <br> Discord Bot </h1>
 <div align="center">
