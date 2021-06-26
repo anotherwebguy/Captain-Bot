@@ -12,3 +12,22 @@ A Discord bot is a software bot that can perform tasks or services for an indivi
 This bot can be invited in any discord server and the bot is ready to go
 
 ----
+## Tech stack
+
+<img src="https://img.shields.io/badge/python-%230175C2.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+
+
+## Bot invite link:
+ Invite Captain Bot in your server by clicking this link ->
+   https://discord.com/api/oauth2/authorize?client_id=857420285569531904&permissions=8&scope=bot
+
+
+## Important Modules Needed
+### 1. discord.py:
+    A modern, easy to use, feature-rich, and async ready API wrapper for Discord written in Python.
+### 2. python-decouple:
+    Decouple helps you to organize your settings so that you can change parameters without having to redeploy your app. Store parameters in ini or .env files.
+### 3. pyjokes:
+    For getting random jokes
+### 4. pywikihow:
+    For searching how to on wikipedia
