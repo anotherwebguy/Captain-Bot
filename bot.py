@@ -1,11 +1,9 @@
 import discord
 from discord.ext import commands
 import os
-from dotenv import load_dotenv
+from decouple import config
 
-load_dotenv()
-
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = config('DISCORD_TOKEN')
 
 client = commands.Bot(command_prefix='!')
 
