@@ -39,24 +39,32 @@ This bot can be invited in any discord server and the bot is ready to go
 ----
 
 ## Commands/Features:
-  1. <b>!help:</b> Gives the list of commands that are possible.<br>
+  1. <b>`!help:`</b> Gives the list of commands that are possible.<br>
       example: !help
-  2. <b>!ban:</b> Bans the provided user.<br>
+  2. <b>`!ban:`</b> Bans the provided user.<br>
       example: !ban @[Discord.member]
-  3. <b>!unban:</b> Unbans the banned provided user.<br>
+  3. <b>`!unban:`</b> Unbans the banned provided user.<br>
       example: !unban [Discord.name+'#'+'Discord.discriminator]
-  4. <b>!kick:</b> Kicks the provided user from server.<br>
+  4. <b>`!kick:`</b> Kicks the provided user from server.<br>
       example: !kick @[Discord.member]
-  5. <b>!8ball:</b> Ask a question to check your luck.<br>
+  5. <b>`!8ball:`</b> Ask a question to check your luck.<br>
       example: !8ball Will i pass the test tomorrow?
-  6. <b>!uinfo/user:</b> Shows the provided user info.<br>
+  6. <b>`!uinfo/user:`</b> Shows the provided user info.<br>
       example: !user @[Discord.member]
-  7. <b>!poll:</b> Creates a poll using reactions.
+  7. <b>`!poll:`</b> Creates a poll using reactions.
       <br>example: !poll Which is your favourite anime? | Naruto | Steins;gate | One piece | Death note
-  8. <b>!calc:</b> Do some basic calculations.<br>
+  8. <b>`!calc:`</b> Do some basic calculations.<br>
       example: !calc 2+3
-  9. <b>!clear:</b> Create last specified number of messages.<br>
+  9. <b>`!clear:`</b> Create last specified number of messages.<br>
       example: !clear 20
+  10. <b>`!joke:`</b> Gets random jokes.<br>
+      example: !joke 
+  11. <b>`!wiki:`</b> Searches wikipedia.<br>
+      example: !wiki what is python?
+  12. <b>`!news:`</b> Gets latest news.<br>
+      example: !news 
+  13. <b>`!about:`</b> Shows about bot.<br>
+      example: !about    
 
 ----
 
