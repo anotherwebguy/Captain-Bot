@@ -34,6 +34,7 @@ class Functions(commands.Cog):
 
     @commands.command(aliases = ['8ball','Test'])
     async def _8ball(self, ctx, *, question):
+        """Try your luck!!"""
         responses = ['It is certain.',
                      'Without a doubt',
                      'Yes. definitely',
@@ -53,20 +54,24 @@ class Functions(commands.Cog):
 
     @commands.command()
     async def clear(self, ctx, amount=5):
+        """clear chats"""
         await ctx.channel.purge(limit=amount)
 
     @commands.command()
     async def kick(self, ctx, member: discord.Member, *, reason=None):
+        """kick users"""
         await member.kick(reason=reason)
         await ctx.sendO(f"Kicked {member.mention} from the server.")
 
     @commands.command()
     async def ban(self, ctx, member: discord.Member, *, reason=None):
+        """ban users"""
         await member.ban(reason=reason)
         await ctx.send(f"Banned {member.mention} from the server.")
 
     @commands.command()
     async def unban(self, ctx, *, member):
+        """unban users"""
         banned_users = await ctx.guild.bans()
         print(banned_users)
         member_name, member_descriminator = member.split('#')

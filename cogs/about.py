@@ -33,5 +33,6 @@ def embed_perms(message):
 
     return check
 
+
 def setup(client):
     client.add_cog(About(client))

@@ -8,6 +8,7 @@ class Userinfo(commands.Cog):
 
     @commands.group(invoke_without_command=True, aliases=['user', 'uinfo', 'info', 'ui'])
     async def userinfo(self, ctx, *, name=""):
+        """Get user info"""
         if ctx.invoked_subcommand is None:
             if name:
                 try:

@@ -95,18 +95,21 @@ class Extras(commands.Cog):
 
     @commands.command(aliases = ['joke'])
     async def jokes(self, ctx):
+        """Get random jokes"""
         joke = pyjokes.get_joke()
         print(joke)
         await ctx.send(joke)
 
     @commands.command(aliases=['wiki'])
     async def wikipedia(self, ctx, *, question):
+        """Search questions on wikipedia"""
         result = wikipedia.summary(question, sentences=2)
         print(result)
         await ctx.send(result)
 
     @commands.command(aliases = ['tellnews'])
     async def news(self,ctx):
+        """get latest news"""
         apikey = config('API_KEY')
         url = f"https://newsapi.org/v2/top-headlines?country=in&apiKey={apikey}"
         news_page = requests.get(url).json()
