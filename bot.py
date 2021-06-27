@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import random
 from decouple import config
-from webserver import keep_alive
 import os
 
 TOKEN = config('DISCORD_TOKEN')
@@ -27,6 +26,5 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-keep_alive()
 
 client.run(TOKEN)
