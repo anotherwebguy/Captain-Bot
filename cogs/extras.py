@@ -1,8 +1,11 @@
 import discord
 from discord.ext import commands
 import asyncio
-import math
+import pyjokes
 from math import sqrt
+from pywikihow import search_wikihow
+import wikipedia,requests
+from decouple import config
 
 
 class Extras(commands.Cog):
@@ -89,6 +92,31 @@ class Extras(commands.Cog):
             await ctx.message.delete()
         else:
             await ctx.send(self.bot.bot_prefix + answer)
+
+    @commands.command(aliases = ['joke'])
+    async def jokes(self, ctx):
+        joke = pyjokes.get_joke()
+        print(joke)
+        await ctx.send(joke)
+
+    @commands.command(aliases=['wiki'])
+    async def wikipedia(self, ctx, *, question):
+        result = wikipedia.summary(question, sentences=2)
+        print(result)
+        await ctx.send(result)
+
+    @commands.command(aliases = ['tellnews'])
+    async def news(self,ctx):
+        apikey = config('API_KEY')
+        url = f"https://newsapi.org/v2/top-headlines?country=in&apiKey={apikey}"
+        news_page = requests.get(url).json()
+        articles = news_page["articles"]
+        headlines = []
+        days = ["First", "Second", "Third", "Fourth", "Fifth"]
+        for ar in articles:
+            headlines.append(ar["title"])
+        for i in range(len(days)):
+            await ctx.send(f"today's {days[i]} news is: {headlines[i]}")
 
 
 def embed_perms(message):
