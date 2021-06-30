@@ -13,7 +13,7 @@
 </div>
 
 A Discord bot is a software bot that can perform tasks or services for an individual. The term ”chatbot” is also used to refer to Discord bots.
-This bot can be invited in any discord server and the bot is ready to go
+This bot can be invited in any discord server and the bot is ready to go.
 
 ----
 ## Tech stack
